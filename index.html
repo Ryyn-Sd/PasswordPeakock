@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Peakock!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="cards"></div>
+    <div id="modals"></div>
+    <h3>Add another password</h3>
+    <p>Note that you dont have to fill out all the fields except the Name</p>
+    <form id="newForm" action="/api/new" method="POST">
+      Name of the website: <input type="text" name="name"><br />
+      URL of the website: <input type="text" name="url"><br />
+      Email: <input type="text" name="email"><br />
+      Username: <input type="text" name="username"><br />
+      Password: <input type="password" name="password"><br />
+      <input type="submit" value="Save!">
+    </form><br />
+    <a href="/logout"><button>Logout</button></a>
+    <script src="/index.js"></script>
+</body>
+
+</html>
