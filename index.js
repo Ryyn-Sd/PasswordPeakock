@@ -75,4 +75,4 @@ app.post('/api/delete', async (req, res) => {
   res.send('done')
 })
 
-app.listen(3000)
+app.listen(process.env.PORT || 3000)
