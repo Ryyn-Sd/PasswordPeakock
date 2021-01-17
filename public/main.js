@@ -68,7 +68,7 @@ function hydrate() {
             fetch('/api/delete', {
               method: 'post',
               body: JSON.stringify({
-                name: v.name
+                id: v._id
               }),
               headers: {
                 'Content-Type': 'application/json'
